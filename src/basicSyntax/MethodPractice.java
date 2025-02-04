@@ -7,35 +7,35 @@ public class MethodPractice {
 		int a = 44;
 		int b = 4;
 
-		edd(a, b);
+		output(a, b);
 
 	}
-
+//足し算
 	public static int add(int a, int b) {
 		int sum = a + b;
 
 		return sum;
 	}
-
+//引き算
 	public static int sub(int a, int b) {
 		int difference = a - b;
 
 		return difference;
 	}
-
+//掛け算
 	public static int mult(int a, int b) {
 		int product = a * b;
 
 		return product;
 	}
-
+//割り算
 	public static int div(int a, int b) {
 		int quotient = a / b;
 
 		return quotient;
 	}
-
-	public static void edd(int a, int b) {
+//出力
+	public static void output(int a, int b) {
 		String answer = "計算結果は";
 
 		int sum = MethodPractice.add(a, b);
