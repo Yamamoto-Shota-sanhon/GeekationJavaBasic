@@ -6,58 +6,41 @@ public class MethodPractice {
         // TODO 自動生成されたメソッド・スタブ
         int a = 44;
         int b = 4;
-        int[] numbers = { a, b };
+        int addResult = add(a, b);
+        int subResult = sub(a, b);
+        int multResult = mult(a, b);
+        int divResult = div(a, b);
 
-        output(numbers);
-
+        output(addResult);
+        output(subResult);
+        output(multResult);
+        output(divResult);
     }
 
     //足し算
     public static int add(int a, int b) {
-        int sum = a + b;
-
-        return sum;
+        return a + b;
     }
 
     //引き算
     public static int sub(int a, int b) {
-        int difference = a - b;
-
-        return difference;
+        return a - b;
     }
 
     //掛け算
     public static int mult(int a, int b) {
-        int product = a * b;
-
-        return product;
+        return a * b;
     }
 
     //割り算
     public static int div(int a, int b) {
-        int quotient = a / b;
-
-        return quotient;
+        return a / b;
     }
 
     //出力
-    public static void output(int[] numbers) {
+    public static void output(int number) {
         String answer = "計算結果は";
-        int a = numbers[0];
-        int b = numbers[1];
-
-        int sum = MethodPractice.add(a, b);
-        System.out.println(answer + sum + "です。");
-
-        int difference = MethodPractice.sub(a, b);
-        System.out.println(answer + difference + "です。");
-
-        int product = MethodPractice.mult(a, b);
-        System.out.println(answer + product + "です。");
-
-        int quotient = MethodPractice.div(a, b);
-        System.out.println(answer + quotient + "です。");
-
+        System.out.println(answer + number + "です。");
     }
 
 }
