@@ -14,10 +14,10 @@ public class GeekIntroduction {
     public static void specoalSkill(int num1, int num2) {
 
         for (int num = 1; num <= num2; num++) {
-            if (num1 == 0 || num2 <= 0) {
+            if (num1 <= 0 || num2 <= 0) {
                 System.out.println("num1とnum2は0より大きい値にしてください。");
                 break;
-            } else if (num1 >= num2) {
+            } else if (num1 > num2) {
                 System.out.println("num2はnum1より大きい値にしてください。");
                 break;
             } else if (num1 > 300 || num2 > 300) {
